@@ -163,11 +163,6 @@ def add_sheet_data(data_set):
         print('data set is empty ')
 
 
-# INFO  to amazon s3
-def amazon_s3():
-    # needs credit card info to use service
-    pass
-
 def main():
     url = "https://www.amazon.fr/s?k=watches&rh=n%3A22623610031%2Cp_n_feature_thirty-two_browse-bin%3A96332143031%2Cp_36%3A20000-31000&dc&language=en&qid=1752346562&rnid=2492331031&ref=sr_nr_p_36_0_0"
     google_sheets()
