@@ -51,7 +51,7 @@ def extract_data(url):
 
 # Extract product links
 def extract_product_links(html):
-    print("🎁 extracting product links ........")
+    print("extracting product links ........")
     links = []
     soup = BeautifulSoup(html, 'html.parser')
     link = soup.find_all('div', {'role': 'listitem'})
