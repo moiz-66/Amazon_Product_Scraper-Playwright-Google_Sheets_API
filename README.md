@@ -1,2 +1,10 @@
 # Amazon_products
-We used Playwright to scrape Amazon, as it handles JavaScript and avoids blocks like CAPTCHA, IP bans, and user-agent checks. The HTML content was parsed using BeautifulSoup to extract product info like name, price, and image. The data was then saved to Google Sheets via the Sheets API using a service account.
+in the project we are going to extract product information from amazon.it is not possible using requests
+because the amazon  block scrapers using the following technique like
+IP Blocking / Rate Limiting,User-Agent Detection,Header Validation,CAPTCHA Challenges,JavaScript Challenges
+Dynamic Page Content,Geo-blocking / Location-Based Restrictions,Session / Cookie Checks,Login Requirement
+Honeypot Links,Click / Scroll Behavior Detection,Frequent DOM/Class Changes,TLS Fingerprinting,Request Frequency
+Pattern Analysis,Behavioral Analysis (AI/ML)
+so we decided to use playwright which is  a modern tool alternative to selenium but faster and advance then selenium .
+we extracted the data using playwright and letter on parse it using beautiful soup and extracted required data
+and save it to the Google sheets using google sheets api.
