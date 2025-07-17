@@ -1,8 +1,25 @@
-# Amazon_products
-In this project, I built a scraper to extract product information from Amazon. Since Amazon uses advanced techniques to block bots like IP blocking, user-agent checks, CAPTCHA, JavaScript rendering, and behavioral detection using basic tools like requests doesn’t work.
+# Amazon_products_scraper
+Overview
+In this project, I created a web scraper to collect product information from Amazon. Since Amazon uses strong protection against bots—like IP blocking, user-agent checks, CAPTCHAs, JavaScript rendering, and behavior tracking—traditional tools like requests don’t work well.
 
-To handle this, I used Playwright, a modern and powerful alternative to Selenium, which can load JavaScript-heavy pages just like a real browser. Once the page was fully loaded, I used BeautifulSoup to parse the HTML and extract the product details such as name, price, description, image URL, and product URL.
+Tools Used
+To solve this, I used Playwright, a powerful browser automation tool that can fully load JavaScript-heavy pages, just like a real user. Once the page content was loaded, I used BeautifulSoup to extract product details from the HTML.
 
-Finally, I saved all the scraped data into a Google Sheet using the Google Sheets API, making it easy to access and share.
+What It Extracts
+The scraper collects the following product information:
 
-This approach ensures reliable scraping even from a heavily protected site like Amazon.
+Product Name
+
+Price
+
+Description
+
+Product URL
+
+Image URL
+
+Output
+All the scraped data is saved directly to a Google Sheet using the Google Sheets API and a service account. This makes the data easy to access, share, or use for further analysis.
+
+Why This Approach
+Using Playwright makes the scraper more reliable when dealing with websites like Amazon that use advanced anti-scraping methods. It ensures the content is loaded properly and helps avoid detection.
